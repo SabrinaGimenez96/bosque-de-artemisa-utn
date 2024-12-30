@@ -1,0 +1,28 @@
+<div class="contenedor">
+  <div class="banner-productos">
+    <h2>Artemisa: ramos que florecen con estilo y pasión</h2>
+  </div>
+<div class="ramos-flores">
+  @for(ramos of ramos; track ramos.id) {
+  <div class="ramos">
+    <img [src]="ramos.imagen" alt="imagen de {{ramos.nombre}}">
+    <h3>{{ramos.nombre}}</h3>
+    <button (click)="verDetalles(ramos)">Ver detalles</button>
+  </div>
+  }
+</div>
+</div>
+
+<div [class.modal-visible]="productoSeleccionado" class="modal">
+  <div class="modal-contenido">
+    <button class="cerrar" (click)="cerrarModal()">X</button>
+    <div class="detalle-producto">
+      <img [src]="productoSeleccionado?.imagen" alt="Imagen de {{productoSeleccionado?.nombre}}">
+      <div class="detalles">
+        <h3>{{productoSeleccionado?.nombre}}</h3>
+        <p>{{productoSeleccionado?.descripcion}}</p>
+        <p>Precio: {{productoSeleccionado?.precio}} AR$</p>
+      </div>
+    </div>
+  </div>
+</div>

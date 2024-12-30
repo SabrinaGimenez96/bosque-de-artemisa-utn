@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=Gowun+Dodum&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.contenedor {
+  background-color: var(--malva);
+  max-height: 100%;
+  padding: 15px;
+}
+
+.ramos-flores {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(203px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: var(--malva);
+  padding-top: 20px;
+}
+
+.banner-productos {
+  background-image: url('/imagenes/papel-pared-3d-interior-hogar-decoraciones-clasicas-fondo-flores-ilustracion-clasica-interior-dormitorio-arte-pared-3d_1028938-205008.jpg');
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  border: 3px solid var(--dorado);
+
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+  color: var(--verde);
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 10px;
+  color: var(--verde);
+  font-family: "Cinzel", serif;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px rgba(244, 243, 243, 0.6);
+}
+
+.ramos {
+  padding: 1rem;
+  text-align: center;
+  height: 100%;
+}
+
+.ramos img {
+  width: 80%;
+  border: 3px solid var(--dorado);
+
+}
+
+.ramos button{
+  all: unset;
+  padding: 5px;
+  font-family: "Lora", serif;
+
+}
+
+.ramos button:hover{
+  cursor: pointer;
+  color: var(--dorado);
+  text-shadow: 2px 2px 4px rgba(249, 247, 247, 0.6);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-visible {
+  display: flex;
+}
+
+.modal-contenido {
+  position: relative;
+  background-color: var(--gris);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 3px solid var(--dorado);
+}
+
+.cerrar {
+  all: unset;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--verde);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cerrar:hover{
+  color: var(--dorado);
+}
+
+.detalle-producto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.detalle-producto img {
+  width: 250px;
+  height: auto;
+  margin-right: 20px;
+  border: 3px solid var(--dorado);
+}
+
+.detalle-producto .detalles {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.detalles h3{
+  color: var(--dorado);
+  font-size: 30px;
+}
+
+.detalles p{
+  text-align: center;
+  padding: 10px 0 0 0;
+}

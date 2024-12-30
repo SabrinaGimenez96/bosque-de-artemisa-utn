@@ -1,0 +1,21 @@
+<div class="contenedor">
+  <div class="contenedor-contacto">
+    <h1 class="contactanos">Queremos saber como podemos ayudarte o conocer tu experiencia.<br>
+      ¡Hablemos, Estamos encantados de conocerte!
+    </h1>
+  </div>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <h1>Bosque de Artemisa</h1>
+    <input placeholder="Nombre" id="name" type="text" formControlName="name">
+
+    <input placeholder="Email" id="email" type="email" formControlName="email">
+
+    <textarea placeholder="Mensaje" id="message" formControlName="message"></textarea>
+
+    <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+
+  </form>
+
+
+</div>

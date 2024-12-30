@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=Gowun+Dodum&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.contenedor {
+    background-color: var(--gris);
+    max-height: 100%;
+    padding: 15px;
+}
+
+.contenedor-banner{
+    background-image: url('/imagenes/patron-angeles-fresco-vintage_863013-97062.jpg') ;
+    background-size: cover;  
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contenedor-banner h1{
+    font-family: "Cinzel", serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: normal;
+    color: var(--dorado);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.5); 
+}
+
+.contenedor-banner p{
+    font-family: "Lora", serif;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 18px;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    background: rgba(7, 7, 7, 0.5); 
+}
+
+.contenedor-introduccion{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 5px;
+    background-color: var(--blanco);
+}
+
+.imagen {
+    background-image: url('/imagenes/patrones-florales-siglo-xix_1030945-154.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 82%;
+    width: 26%;
+    box-shadow: 5px 5px 15px var(--gris);
+}
+
+.contenedor-frase{
+    width: 60%;
+}
+
+.contenedor-frase h2{
+    font-family: "Cinzel", serif;
+    text-align: center;
+    color: var(--verde);
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.contenedor-frase p{
+    font-family: "Lora", serif;
+    font-size: 17px;
+    text-align: center;
+}

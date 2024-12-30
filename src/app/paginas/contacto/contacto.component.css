@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=Gowun+Dodum&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+.contenedor{
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #F8F8FF; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    background-image: url('/imagenes/fondo-flores.jpg');
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contenedor-contacto{
+    width: 60%;
+}
+
+.contactanos{
+    text-align: center;
+    color: var(--verde);
+    font-family: "Cinzel", serif;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 4px rgb(251, 249, 250);
+}
+
+form {
+    background-color: var(--verde);
+    border-radius: 10px;
+    height: 60%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-shadow: 2px 2px 4px rgba(6, 6, 6, 0.721);
+}
+
+form h1{
+    font-family: "Cinzel", serif;
+    font-weight: normal;
+    color: var(--dorado);
+    padding: 15px;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+form input {
+    all: unset;
+    border-radius: 50px;
+    width: 45%;
+    height: 10%;
+    background-color: var(--gris);
+    padding: 5px 15px;
+
+    
+}
+
+form textarea {
+    all: unset;
+    border-radius: 50px;
+    width: 45%;
+    height: 10%;
+    background-color: var(--gris);
+    padding: 5px 15px;
+    
+}
+
+form button {
+    border-radius: 20px;
+    width: 20%;
+    height: 40px;
+    background-color: var(--malva);
+    color: black;
+    font-family: "Cinzel", serif;
+    text-shadow: 2px 2px 4px rgba(6, 6, 6, 0.721);
+}
+
+form input:focus{
+    outline: none;
+    background-color: var(--malva);
+    box-shadow: 0 0 5px rgba(250, 251, 250, 0.5);
+}
+
+form textarea:focus{
+    outline: none;
+    background-color: var(--malva);
+    box-shadow: 0 0 5px rgba(250, 251, 250, 0.5);
+}
+
+form button:hover{
+    cursor: pointer;
+    color: var(--blanco);
+    background-color: var(--dorado);
+}
+
+input::placeholder{
+    font-family: "Lora", serif;
+    text-align: center;
+}
+
+textarea::placeholder{
+    font-family: "Lora", serif;
+    text-align: center;
+}
